@@ -1,0 +1,45 @@
+{
+  "name": "idavoll/tag-module",
+  "description": "Tag management in AsgardCMS",
+  "type": "asgard-module",
+  "license": "MIT",
+  "keywords": [
+    "asgardcms",
+    "tags",
+    "taggable"
+  ],
+  "authors": [
+    {
+      "name": "Nicolas Widart",
+      "email": "n.widart@gmail.com"
+    }
+  ],
+  "require": {
+    "php": ">=7.0.0",
+    "composer/installers": "~1.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "~6.0",
+    "orchestra/testbench": "3.5.*",
+    "idavoll/page-module": "~3.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Modules\\Tag\\": ""
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Modules\\Tag\\": ".",
+      "Modules\\": "Modules/"
+    }
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "1.0.x-dev",
+      "dev-master": "3.0.x-dev"
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}

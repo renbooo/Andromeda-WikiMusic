@@ -1,0 +1,54 @@
+{
+  "name": "idavoll/media-module",
+  "type": "asgard-module",
+  "description": "Media module for AsgardCMS. Handles the media library.",
+  "keywords": [
+    "asgardcms",
+    "media",
+    "files",
+    "library",
+    "thumbnails",
+    "filters"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Nicolas Widart",
+      "email": "info@asgardcms.com",
+      "role": "Developer"
+    }
+  ],
+  "support": {
+    "email": "support@asgardcms.com",
+    "issues": "https://github.com/AsgardCms/Platform/issues",
+    "source": "https://github.com/AsgardCms/Media"
+  },
+  "require": {
+    "php": ">=7.0.0",
+    "composer/installers": "~1.0",
+    "intervention/image": "^2.3",
+    "idavoll/tag-module": "~3.0",
+    "guzzlehttp/psr7": "^1.3"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "~6.0",
+    "orchestra/testbench": "3.5.*",
+    "league/flysystem-aws-s3-v3": "~1.0",
+    "mockery/mockery": "^0.9.5",
+    "friendsofphp/php-cs-fixer": "^1.11",
+    "doctrine/dbal": "^2.5"
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Modules\\Media\\": ".",
+      "Modules\\": "Modules/"
+    }
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "3.0.x-dev"
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
